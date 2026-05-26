@@ -1,0 +1,66 @@
+# Tecnologías y Funcionalidades de FlashMind
+
+Este documento resume las tecnologías utilizadas y las funcionalidades implementadas en el proyecto FlashMind (FichasCartas).
+
+## 1. Tecnologías Utilizadas
+
+### Frontend (Móvil y Multiplataforma)
+- **Framework:** Flutter (Dart)
+- **Gestión de Estado:** Provider
+- **Comunicación API:** Dio (Cliente HTTP)
+- **Enrutamiento:** Go Router
+- **Almacenamiento Local (Offline):** Hive y Hive Flutter
+- **Almacenamiento Seguro (JWT):** Flutter Secure Storage
+- **Preferencias del Usuario:** Shared Preferences
+- **Notificaciones:** Flutter Local Notifications
+- **Interfaz de Usuario:** Material Design, Google Fonts y Cupertino Icons
+- **Internacionalización y Utilidades:** Intl, Timezone y Connectivity Plus
+
+### Backend (API REST)
+- **Lenguaje:** Python
+- **Framework:** Flask
+- **Base de Datos:** SQLite (para desarrollo local) y soporte para PostgreSQL (psycopg2-binary)
+- **ORM:** Flask-SQLAlchemy
+- **Migraciones:** Flask-Migrate
+- **Autenticación:** Flask-JWT-Extended (tokens JWT)
+- **Seguridad:** Werkzeug (hashing de contraseñas) y Flask-CORS
+- **Configuración:** python-dotenv
+
+---
+
+## 2. Funcionalidades Principales
+
+### Gestión de Flashcards
+- Creación, edición y eliminación de fichas educativas.
+- Organización de fichas por temas o categorías.
+- Sistema de repaso basado en el dominio de las tarjetas (Mastery Indicator).
+
+### Inteligencia Artificial (AI)
+- Generación automática de flashcards a partir de contenido o temas específicos (integrado mediante AI Service).
+
+### Quizzes y Evaluación
+- Toma de exámenes tipo quiz para evaluar el conocimiento.
+- Seguimiento de resultados y progreso.
+
+### Modo Offline y Sincronización
+- Capacidad para trabajar sin conexión a internet utilizando almacenamiento local (Hive).
+- Sincronización automática de datos con el servidor una vez se recupera la conexión.
+
+### Perfil de Usuario y Estadísticas
+- Registro e inicio de sesión seguro con JWT.
+- Estadísticas detalladas de estudio y rachas (streaks).
+
+### Personalización y Notificaciones
+- Soporte para múltiples temas visuales.
+- Recordatorios de estudio configurables mediante notificaciones locales.
+
+---
+
+## 3. Soporte de Plataformas
+Gracias al uso de Flutter, la aplicación está preparada para ejecutarse en:
+- Android
+- iOS
+- Web
+- Windows
+- macOS
+- Linux
